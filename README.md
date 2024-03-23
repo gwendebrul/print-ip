@@ -4,8 +4,8 @@ This short script gets the date, hostname and ip address of the server/computer 
 
 ### Modify these VARS at the beginning of the file
 
-LOCATION => the ssh to your print server
-PRINTER => the name of the CUPS printer to print to
+    LOCATION => the ssh to your print server
+    PRINTER => the name of the CUPS printer to print to
 
 ### crontab
 
