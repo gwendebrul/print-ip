@@ -3,7 +3,7 @@
 ## Modify next two VARS to your use case
 LOCATION='ssh sid@my-print-server'
 PRINTER='star-lc20'
-IRSTNUMBER="192"
+FIRSTNUMBER="192"
 ## End modification
 
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
