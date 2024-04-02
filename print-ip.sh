@@ -3,11 +3,11 @@
 ## Modify next two VARS to your use case
 LOCATION='ssh sid@my-print-server'
 PRINTER='star-lc20'
+IRSTNUMBER="192"
 ## End modification
 
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
 HOSTNAME=`hostname`
-FIRSTNUMBER="192"
 IP_COMMAND=$(ip 2>&1 | grep -c "not found")
 
 if [[ $IP_COMMAND = 0 ]]

@@ -6,6 +6,7 @@ This short script gets the date, hostname and ip address of the server/computer 
 
     LOCATION => the ssh to your print server
     PRINTER => the name of the CUPS printer to print to
+    FIRSTNUMBER => this is the first digits before the first . (ex: 192 or 10)
 
 ### crontab
 
