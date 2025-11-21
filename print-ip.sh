@@ -18,6 +18,4 @@ else
     echo "ifconfig gets ip address"
     IP=$(ifconfig | grep 'inet' | grep -E -o "$FIRSTNUMBER\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | head -1)
 fi
-echo "$DATE $HOSTNAME is reachable at $IP" > print-ip.txt
-
-cat print-ip.txt|$LOCATION "lp -d $PRINTER"
+printf "$DATE $HOSTNAME is reachable at $IP\r\n"|$LOCATION "lp -d $PRINTER"
