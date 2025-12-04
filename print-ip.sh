@@ -1,9 +1,7 @@
 #!/bin/bash
 
 ## Modify next two VARS to your use case
-LOCATION='ssh sid@my-print-server'
 PRINTER='star-lc20'
-FIRSTNUMBER="192"
 ## End modification
 
 DATE=`date '+%Y-%m-%d %H:%M:%S'`
@@ -18,4 +16,4 @@ else
     echo "ifconfig gets ip address"
     IP=$(ifconfig | grep 'inet' | grep -E -o "$FIRSTNUMBER\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}" | head -1)
 fi
-printf "$DATE $HOSTNAME is reachable at $IP\r\n"|$LOCATION "lp -d $PRINTER"
+printf "$DATE $HOSTNAME is reachable at $IP\r\n"|lp -d $PRINTER
